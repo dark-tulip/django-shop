@@ -1,8 +1,10 @@
 # django-shop
-Выражаю благодарность этому человеку за его туториал https://www.youtube.com/watch?v=jME4-T_hfhQ&list=PLETAtUAAzGHRyGM0ksurmNYTEAd_rlA-u&index=3
+Выражаю благодарность этому человеку за его туториал https://youtu.be/jME4-T_hfhQ
 
-Установите зависимые пакеты
-```pip install -r requirements.txt```
+Устанавливаем зависимые пакеты
+```
+pip install -r requirements.txt
+```
 
 Создаем новые миграции на основе моделей models.py 
 ```
