@@ -2,7 +2,7 @@
 {% block content %}
 
 <nav aria-label="breadcrumb" class="mt-3 flex-row">
-    <ol class="breadcrumb">
+    <ol class="breadcrumb font-weight-light" style="background-color: white;">
       <li class="breadcrumb-item"><a href="{% url 'base' %}">Главная</a></li>
       <li class="breadcrumb-item active"> {{ category.name }} </li>
     </ol>
@@ -25,10 +25,10 @@
                         </a>
                     </h5>
                     <!-- Product price-->
-                    <h6> {{ product.price }} kzt </h6>      
+                    <h6> {{ product.price }} тг </h6>      
                     
                     <a href="{% url 'add_to_cart' ct_model=product.get_model_name slug=product.slug %}">
-                        <button class="btn btn-danger">Добавить в корзину</button>     
+                        <button class="btn btn-danger font-weight-light">Добавить в корзину</button>     
                     </a>
                 </div>
             </div>

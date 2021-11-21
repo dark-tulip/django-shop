@@ -17,7 +17,7 @@
 	<!-- Custom styles for this template -->
 	<!-- <link href="css/shop-homepage.css" rel="stylesheet" /> -->
 	<!-- Bootstrap Font Icon CSS -->
-	
+
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
@@ -111,9 +111,9 @@
 								<h4 class="card-title font-weight-light">
 									<a href="{{ product.get_absolute_url }}">{{ product.title }}</a>
 								</h4>
-								<h5>{{ product.price }} руб.</h5>
+								<h5>{{ product.price }} тг.</h5>
 								<a href="{% url 'add_to_cart' ct_model=product.get_model_name slug=product.slug %}">
-									<button class="btn btn-danger">Добавить в корзину</button>
+									<button class="btn btn-danger font-weight-light">Добавить в корзину</button>
 								</a>
 							</div>
 						</div>
