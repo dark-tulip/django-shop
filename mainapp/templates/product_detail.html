@@ -18,8 +18,8 @@
 
     <div class="col-md-8">
         <h3>{{ product.title }}</h3>
-        <p>Цена: {{ product.price }} тг.</p>
-        <p>Описание: {{ product.description }}</p>
+        <p class="font-weight-bold">Цена: {{ product.price }} тг.</p>
+        <p class="font-weight-light">Описание: {{ product.description }}</p>
         <hr>
         <a href="{% url 'add_to_cart' ct_model=ct_model slug=product.slug %}">
         <button class='btn btn-danger'>Добавить в корзину</button>
