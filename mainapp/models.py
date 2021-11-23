@@ -93,6 +93,7 @@ class CategoryManager(models.Manager):
         ]
         return data
 
+
 class Category(models.Model):
 
     name = models.CharField(max_length=255, verbose_name='Имя категории')
@@ -169,7 +170,6 @@ class Cartproduct(models.Model):
     def save(self, *args, **kwargs):
         self.final_price = self.qty * self.content_object.price
         super().save(*args, **kwargs)
-
 
 
 class Cart(models.Model):

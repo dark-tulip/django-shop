@@ -76,7 +76,6 @@ class FictionBookAdminForm(ModelForm):
             )
 
 
-
 class ScienceBookAdminForm(ModelForm):
     # Что у загруженного изображения минимальная длина и ширина
     def __init__(self, *args, **kwargs):
@@ -88,7 +87,6 @@ class ScienceBookAdminForm(ModelForm):
             )
 
 
-
 class FictionBookAdmin(admin.ModelAdmin):
 
     change_form_template = 'admin.html'
@@ -98,7 +96,6 @@ class FictionBookAdmin(admin.ModelAdmin):
         if db_field.name == 'category':
             return ModelChoiceField(Category.objects.filter(slug='fictionbooks'))
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
-
 
 
 class ScienceBookAdmin(admin.ModelAdmin):
