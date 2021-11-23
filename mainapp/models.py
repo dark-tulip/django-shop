@@ -57,7 +57,7 @@ class LatestProductsManager:
         ct_models = ContentType.objects.filter(model__in=args)  # content_type_model
         for ct_model in ct_models:
             # последние 5 продуктов
-            model_products = ct_model.model_class()._base_manager.all().order_by('-id')[:5]
+            model_products = ct_model.model_class()._base_manager.all().order_by('-id')[:]
             products.extend(model_products)
 
         if with_respect_to:
